@@ -1,0 +1,100 @@
+Quiero que adaptes ESTE proyecto existente para que sea 100% compatible con Vercel.
+
+IMPORTANTE:
+NO quiero rehacer la web.
+NO quiero cambiar el diseño.
+SOLO quiero arreglar la configuración para que despliegue correctamente.
+
+----------------------------------------
+
+PROBLEMAS A SOLUCIONAR:
+
+- Eliminar cualquier backend (Express, server, app.listen, etc)
+- Eliminar carpetas innecesarias como:
+  - artifacts
+  - api-server
+  - lib (si no es frontend)
+- El proyecto NO debe ser monorepo
+
+----------------------------------------
+
+OBJETIVO FINAL:
+
+Dejar el proyecto como una SPA con Vite lista para Vercel.
+
+----------------------------------------
+
+ACCIONES QUE DEBES HACER:
+
+1. Asegurar que el proyecto usa Vite correctamente
+
+2. El proyecto debe tener esta estructura:
+
+/
+  index.html
+  package.json
+  vite.config.js
+  /src (si existe)
+  /assets (imagenes)
+
+3. Asegurar que el build funciona:
+
+npm run build → genera carpeta /dist
+
+----------------------------------------
+
+4. Crear un archivo en la raíz llamado:
+
+vercel.json
+
+con EXACTAMENTE esto:
+
+{
+  "framework": "vite",
+  "outputDirectory": "dist",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
+
+----------------------------------------
+
+5. Asegurar que package.json tiene:
+
+"scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview"
+}
+
+----------------------------------------
+
+6. Eliminar cualquier referencia a:
+- build.mjs
+- pnpm workspaces
+- dependencias de backend
+
+----------------------------------------
+
+7. IMPORTANTE:
+
+- NO usar Express
+- NO usar Node server
+- NO usar API interna
+- SOLO frontend
+
+----------------------------------------
+
+RESULTADO FINAL:
+
+El proyecto debe poder:
+- Subirse a GitHub
+- Importarse en Vercel
+- Deployar SIN errores
+- Sin tocar configuración en Vercel
+
+----------------------------------------
+
+ENTREGA:
+
+Devuélveme todos los archivos modificados listos para usar.

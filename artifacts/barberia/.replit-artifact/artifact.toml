@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Barbería Wilson"
+version = "1.0.0"
+id = "artifacts/barberia"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 20305
+
+[services.development]
+run = "pnpm --filter @workspace/barberia run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/barberia", "run", "build" ]
+publicDir = "artifacts/barberia/dist"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "20305"
+BASE_PATH = "/"
