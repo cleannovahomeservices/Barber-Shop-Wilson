@@ -253,7 +253,8 @@ function Home() {
                   </div>
                   <div>
                     <h3 className="text-xl font-serif font-bold text-foreground mb-2">Contacto</h3>
-                    <a href="https://wa.me/34600000000" className="text-primary hover:text-primary/80 font-medium inline-flex items-center gap-2 group">
+                    <p className="text-muted-foreground mb-3">635 76 59 41</p>
+                    <a href="https://wa.me/34635765941" className="text-primary hover:text-primary/80 font-medium inline-flex items-center gap-2 group">
                       Reservar por WhatsApp
                       <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </a>
