@@ -57,7 +57,7 @@ function Home() {
             <a href="#contacto" className="hover:text-primary transition-colors">Contacto</a>
           </div>
           <Button asChild className="rounded-none px-6 font-serif">
-            <a href="https://wa.me/34600000000" target="_blank" rel="noreferrer">
+            <a href="https://wa.me/34635765941" target="_blank" rel="noreferrer">
               Reservar cita
             </a>
           </Button>
@@ -92,7 +92,7 @@ function Home() {
             <FadeIn delay={700}>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="rounded-none text-base px-8 py-6 font-serif bg-primary hover:bg-primary/90 text-primary-foreground" asChild>
-                  <a href="https://wa.me/34600000000" target="_blank" rel="noreferrer">
+                  <a href="https://wa.me/34635765941" target="_blank" rel="noreferrer">
                     Reservar ahora
                   </a>
                 </Button>
@@ -164,7 +164,7 @@ function Home() {
           <FadeIn>
             <h2 className="text-3xl md:text-5xl font-serif font-bold mb-8">Un buen corte de pelo es la mejor carta de presentación.</h2>
             <Button size="lg" className="rounded-none bg-secondary hover:bg-secondary/90 text-secondary-foreground font-serif text-lg px-10 py-6" asChild>
-              <a href="https://wa.me/34600000000" target="_blank" rel="noreferrer">Pide tu turno hoy</a>
+              <a href="https://wa.me/34635765941" target="_blank" rel="noreferrer">Pide tu turno hoy</a>
             </Button>
           </FadeIn>
         </div>
